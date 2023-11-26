@@ -1,0 +1,17 @@
+---
+import HeaderLink from './HeaderLink.astro'
+import { SITE_TITLE } from '../consts'
+import { DarkModeToggle } from '@/components/DarkModeToggle'
+---
+
+<header class="w-full max-w-6xl p-4">
+	<nav class="flex justify-between">
+		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="internal-links">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+		</div>
+		<DarkModeToggle client:load />
+	</nav>
+</header>
