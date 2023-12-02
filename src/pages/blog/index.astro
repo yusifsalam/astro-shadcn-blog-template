@@ -9,6 +9,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts'
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 )
+const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
 ---
 
 <!doctype html>
@@ -23,7 +24,7 @@ const posts = (await getCollection('blog')).sort(
 					posts.map((post) => (
 						<li>
 							<a href={`/blog/${post.slug}/`}>
-								<Image width={720} height={360} src={post.data.heroImage!} alt="" />
+								<Image width={720} height={360} src={images[post.data.heroImage]()} alt="" />
 								<h4 class="title">{post.data.title}</h4>
 								<p class="date">
 									<FormattedDate date={post.data.pubDate} />
