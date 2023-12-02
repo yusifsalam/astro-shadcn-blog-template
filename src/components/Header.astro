@@ -43,7 +43,15 @@ import { DarkModeToggle } from '@/components/DarkModeToggle'
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+		border-bottom-color: hsl(var(--black));
+	}
+
+	nav a.active:hover {
+		border-bottom-color: hsl(var(--black));
+	}
+
+	nav a:hover {
+		color: hsl(var(--muted-foreground));
 	}
 	.social-links,
 	.social-links a {

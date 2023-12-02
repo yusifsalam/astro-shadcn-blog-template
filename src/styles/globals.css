@@ -88,45 +88,6 @@
 		margin: auto;
 		padding: 3em 1em;
 	}
-	/* h1 {
-		font-size: 2.25rem;
-		line-height: 2.5rem;
-		scroll-margin: 5rem;
-		font-weight: 800;
-		letter-spacing: -0.025em;
-	}
-	h2 {
-		font-size: 1.875rem;
-		line-height: 2.25rem;
-		scroll-margin: 5rem;
-		font-weight: 600;
-		letter-spacing: -0.025em;
-	}
-	h3 {
-		font-size: 1.5rem;
-		line-height: 2rem;
-		scroll-margin: 5rem;
-		font-weight: 600;
-		letter-spacing: -0.025em;
-	}
-
-	h4 {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
-		font-weight: 600;
-		letter-spacing: -0.025em;
-		scroll-margin: 5rem;
-	}
-	p {
-		line-height: 1.75rem;
-	} */
-
-	/* @media (min-width: 1024px) {
-		h1 {
-			font-size: 3rem;
-			line-height: 1;
-		}
-	} */
 
 	h1,
 	h2,
@@ -135,7 +96,6 @@
 	h5,
 	h6 {
 		margin: 0 0 0.5rem 0;
-		color: rgb(var(--black));
 		line-height: 1.2;
 	}
 	h1 {
@@ -158,10 +118,10 @@
 		font-weight: 700;
 	}
 	a {
-		color: var(--accent);
+		color: hsl(var(--muted-foreground));
 	}
 	a:hover {
-		color: var(--accent);
+		color: hsl(var(--foreground));
 	}
 	p {
 		margin-bottom: 1em;
@@ -185,9 +145,7 @@
 		border-radius: 8px;
 	}
 	code {
-		padding: 2px 5px;
-		background-color: rgb(var(--gray-light));
-		border-radius: 2px;
+		@apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
 	}
 	pre {
 		padding: 1.5em;
@@ -197,7 +155,7 @@
 		all: unset;
 	}
 	blockquote {
-		border-left: 4px solid var(--accent);
+		border-left: 4px solid hsl(var(--accent));
 		padding: 0 0 0 20px;
 		margin: 0px;
 		font-size: 1.333em;
