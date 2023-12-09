@@ -60,7 +60,16 @@ const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
 		<main class="grow">
 			<article>
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={images[heroImage]()} alt="" />}
+					{
+						heroImage && (
+							<Image
+								width={1020}
+								height={510}
+								src={images[heroImage]() as Promise<{ default: ImageMetadata }>}
+								alt=""
+							/>
+						)
+					}
 				</div>
 				<div class="prose">
 					<div class="title">

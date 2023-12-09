@@ -24,7 +24,14 @@ const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
 					posts.map((post) => (
 						<li>
 							<a href={`/blog/${post.slug}/`}>
-								<Image width={720} height={360} src={images[post.data.heroImage]()} alt="" />
+								{post.data.heroImage && (
+									<Image
+										width={720}
+										height={360}
+										src={images[post.data.heroImage]() as Promise<{ default: ImageMetadata }>}
+										alt=""
+									/>
+								)}
 								<h4 class="title">{post.data.title}</h4>
 								<p class="date">
 									<FormattedDate date={post.data.pubDate} />
