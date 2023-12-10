@@ -4,6 +4,8 @@ description: 'Here is a sample of some basic Markdown syntax that can be used wh
 pubDate: 'Jul 01 2022'
 heroImage: '/src/assets/blog-placeholder-1.jpg'
 ---
+import {Image} from 'astro:assets'
+import imageSrc from '/src/assets/blog-placeholder-about.jpg'
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
@@ -34,12 +36,12 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 #### Syntax
 
 ```markdown
-![Alt text](./full/or/relative/path/of/image)
+<Image src={imageSrc} alt='alt text' />
 ```
 
 #### Output
 
-![blog placeholder](/src/assets/blog-placeholder-about.jpg)
+<Image src={imageSrc} alt='blog image'/>
 
 ## Blockquotes
 
