@@ -23,7 +23,7 @@ const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
 				{
 					posts.map((post) => (
 						<li>
-							<a href={`/blog/${post.slug}/`}>
+							<a href={`/blog/${post.id}/`}>
 								{post.data.heroImage && (
 									<Image
 										width={720}
