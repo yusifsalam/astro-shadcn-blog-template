@@ -18,7 +18,7 @@ const images = import.meta.glob('/src/assets/*.{jpeg,jpg,png,gif}')
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<BaseLayout>
-		<section>
+		<section class="m-auto w-[720px] max-w-[calc(100%-2em)] p-4">
 			<ul>
 				{
 					posts.map((post) => (

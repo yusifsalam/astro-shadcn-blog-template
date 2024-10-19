@@ -10,38 +10,41 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts'
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<BaseLayout>
-		<h1>🧑‍🚀 Hello, Astronaut!</h1>
-		<p>
-			Welcome to the modified <a href="https://astro.build/">Astro</a> blog starter template. This
-			template serves as a lightweight, minimally-styled starting point for anyone looking to build
-			a personal website, blog, or portfolio with Astro. This template extends the official Astro
-			starter blog template with <a href="https://ui.shadcn.com">shadcn/ui</a> styled and accessible
-			components and adding dark mode. All images (including blog images) are optimized at build
-			time (achieved by only using mdx instead of markdown) and link prefetch is enabled.
-		</p>
-		<p>
-			This template comes with a few integrations already configured in your
-			<code>astro.config.mjs</code> file. You can customize your setup with
-			<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-			React, or Vue to your project.
-		</p>
-		<p>Here are a few ideas on how to get started with the template:</p>
-		<ul>
-			<li>Edit this page in <code>src/pages/index.astro</code></li>
-			<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-			<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-			<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-			<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-		</ul>
-		<p>
-			Have fun! If you get stuck, remember to <a href="https://docs.astro.build/">read the docs</a>
-			 or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-		</p>
-		<p>
-			Check out the source code at <a
-				href="https://github.com/yusifsalam/astro-shadcn-blog-template"
-				>astro-shadcn-blog-template
-			</a>.
-		</p>
+		<div class="m-auto flex w-[720px] flex-col items-start">
+			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<p>
+				Welcome to the modified <a href="https://astro.build/">Astro</a> blog starter template. This
+				template serves as a lightweight, minimally-styled starting point for anyone looking to build
+				a personal website, blog, or portfolio with Astro. This template extends the official Astro starter
+				blog template with <a href="https://ui.shadcn.com">shadcn/ui</a> styled and accessible components
+				and adding dark mode. All images (including blog images) are optimized at build time (achieved
+				by only using mdx instead of markdown) and link prefetch is enabled.
+			</p>
+			<p>
+				This template comes with a few integrations already configured in your
+				<code>astro.config.mjs</code> file. You can customize your setup with
+				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
+				React, or Vue to your project.
+			</p>
+			<p>Here are a few ideas on how to get started with the template:</p>
+			<ul>
+				<li>Edit this page in <code>src/pages/index.astro</code></li>
+				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
+				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
+				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
+				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
+			</ul>
+			<p>
+				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/">read the docs</a
+				>
+				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+			</p>
+			<p>
+				Check out the source code at <a
+					href="https://github.com/yusifsalam/astro-shadcn-blog-template"
+					>astro-shadcn-blog-template
+				</a>.
+			</p>
+		</div>
 	</BaseLayout>
 </html>
